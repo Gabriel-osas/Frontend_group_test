@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    *{
+      padding: 0px;
+      margin: 0px;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      text-align: center;
+      background-color: rgb(235, 235, 235);
+    }
+    .container {
+      width: 40%;
+      border-radius: 30px;
+      background-color: rgb(255, 255, 255);
+      align-self: center;
+      margin: 50px;
+      box-shadow: 0px 0px 4px 3px #00000085;
+    }
+
+    .sign_in {
+      width: 80%;
+      text-align: center;
+      border: 1px solid rgb(41, 41, 41);
+      border-radius: 50px;
+      padding: 15px 20px;
+      margin-top: 30px;
+      align-self: center;
+    }
+
+    .sign_in a {
+      text-decoration: none;
+      color: black;
+    }
+    p {
+      font-size: 25px;
+      margin: 30px;
+    }
+
+    .user {
+      width: 80%;
+      padding: 20px;
+      text-align: start;
+    }
+
+    #next_bnt {
+      background-color: black;
+      color: white;
+    }
+
+   span {
+    font-size: 15px;
+    color: rgb(145, 145, 145);
+   }
+
+   img {
+    width: 5%;
+   }
+  
+   a {
+    color: black;
+    text-decoration: none;
+   }
+
+
+   @media screen and (max-width: 992px) {
+    .container {
+      width: 85%;
+    }
+    .sign_in {
+      width: 90%;
+      padding: 9px;
+      margin-top: 12px;
+    }
+    img {
+      width: 6%;
+    }
+    p {
+      font-size: 20px;
+      margin: 20px;
+    }
+    .user {
+      padding: 15px 5px;
+      width: 90%;
+    }
+    .sign_in a {
+      font-size: 12px;
+    }
+    a {
+      font-size: 12px;
+    }
+    span {
+      font-size: 12px;
+    }
+
+   }
+  </style>
+</head>
+
+<body>
+  <div class="container" id="sec_container">
+    <div class="numberone" style="display: flex; flex-direction:column; justify-content:center;">
+
+        <a href="" class="sign_in" style="display: inline-flex; gap: 10px; justify-content: center;"> <img src="google-svgrepo-com.svg" alt=""> Sign in with Google</a>
+
+        <a href="" class="sign_in" style="display: inline-flex; gap: 10px; justify-content: center;"> <img src="apple-logo-svgrepo-com.svg" alt=""> Sign in with Apple</a>
+    </div>
+
+    <p> Or </p>
+
+    <input type="text" class="user" id="username" placeholder="Phone,Email or Username">
+
+    <div class="numberone" style="display: flex; flex-direction:column; justify-content:center;">
+
+        <a href="" class="sign_in next" id="next_bnt">Next</a>
+      
+        <a href="" class="sign_in" id="forgot_pass">Forgot Password?</a>
+      
+      <a href="" style="color: rgb(145, 145, 145); text-decoration: none;"><span>Don't have an account?</span></a>
+      <a href="" style="padding-bottom: 20px;">Sign up</a>
+    </div>
+  </div>
+</body>
+
+</html>
